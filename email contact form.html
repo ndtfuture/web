@@ -1,0 +1,56 @@
+<!-- Sample HTML Form -->
+<form action="mailto:ndtfuture@gmail.com"
+method="POST"
+enctype="multipart/form-data"
+name="EmailForm">
+    Name:<br>
+    <input type="text" size="20" name="Contact-Name"><br><br>
+    Email:<br>
+    <input type="email" name="Contact-Email"><br><br> 
+    Message:<br> 
+    <textarea name="Contact-Message" rows="10″ cols="40″>
+    </textarea><br><br> 
+	
+	Message2: <br>
+	
+	
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+    <script>
+        /* Add "https://api.ipify.org?format=json" to 
+        get the IP Address of user*/
+        $(document).ready(()=>{
+            $.getJSON("https://api.ipify.org?format=json",
+            function (data) {
+
+                // Displayin IP address on screen
+                $("#ndt").html(data.ip);
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <left>
+        <h1>
+              GeeksforGeeks
+          </h1>
+        <h3>
+              Public IP Address of user is:
+          </h3>
+        <p id="ndt"></p>
+
+    </left>
+</body>
+	
+	<br><br>
+
+	<button type="submit" value="Submit">Send</button>
+	
+	
+
+	
+	
+</form>  
